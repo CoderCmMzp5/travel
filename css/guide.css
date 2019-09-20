@@ -1,0 +1,79 @@
+.guideTitle{
+    width: 386px;
+    height: 90px;
+    margin:80px auto;
+    font-size: 28px;
+}
+.guideTitle div{
+    width: 50%;
+    line-height: 90px;
+    height: 90px;
+    float: left;
+    text-align: center;
+    border: 1px solid #399EFA
+}
+.guideTitle div img{
+    width: 28px;
+    margin-right: 5px;
+    vertical-align: middle
+}
+.guideTitle div span{
+    vertical-align: middle
+}
+.guideTitle div.selected{
+    background: #399EFA;
+    color: #FFFFFF;
+    border: 0px solid #399EFA
+}
+.guideContentHeader{
+    padding:40px;
+    box-shadow:0px 0px 24px 0px rgba(16,53,87,0.05);
+    width:386px;
+    height:207px;
+    border-right: 20px solid #fafafa;
+    border-bottom: 20px solid #fafafa;
+    float: left
+}
+.personLogo{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+.personMes span:nth-of-type(1){
+    color:#222;
+    font-size: 20px;
+    display: block
+}
+.personMes span:nth-of-type(2){
+    color:#F5A623;
+    font-size: 14px;
+    display: block
+}
+.addr{
+    float:right;
+    vertical-align: middle;
+    padding-top: 2px;
+}
+.addr img{
+    width: 10px;
+    vertical-align: middle
+}
+.addr span{
+    color:#888;
+    font-size: 12px;
+    vertical-align: middle
+}
+.guideContent{
+    width: 1200px;
+    margin:0 auto;
+    padding-bottom: 70px;
+}
+.personMes{
+    display: inline-block;
+}
+.guideContentHeader p{
+    color:#666;
+    font-size: 14px;
+    margin-top: 9px;
+}

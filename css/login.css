@@ -1,0 +1,111 @@
+.l_b{
+	    width: 365px;
+    height: 412px;
+    position: absolute;
+    right: 10%;
+    top: 50%;
+    margin-top: -206px;
+    padding-top: 32px;
+    padding-bottom: 20px;
+    padding-left: 33px;
+    padding-right: 33px;
+    border-radius: 5px;
+    background: #fff;
+}
+.l_b_t{
+	    color: #404040;
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+.formDiv{
+	    border-radius: 3px;
+    border: 1px solid #ededed;
+    vertical-align: middle;
+    padding: 6px;
+    margin-bottom: 15px;
+}
+.formDiv img,input{
+	vertical-align: middle;
+	border:none;
+	outline: none;
+	font-size: 12px;
+	color:#d1d1d1;
+}
+.formDiv img{
+	    width: 28px;
+    margin-right: 7px;
+}
+.formDiv input{
+	    height: 30px;
+    border: none;
+}
+input::-webkit-input-placeholder{
+    color:#d1d1d1;
+}
+input::-moz-placeholder{   /* Mozilla Firefox 19+ */
+    color:#d1d1d1;
+}
+input:-moz-placeholder{    /* Mozilla Firefox 4 to 18 */
+    color:#d1d1d1;
+}
+input:-ms-input-placeholder{  /* Internet Explorer 10-11 */ 
+    color:#d1d1d1;
+}
+.l_b_btn{
+	    width: 100%;
+    line-height: 43px;
+    background: #399efa;
+    color: #fff;
+    font-size: 13px;
+    text-align: center;
+    border-radius: 3px;
+    margin-top: 33px;
+}
+.l_b_btn_mes{
+	    height: 20px;
+    margin-top: 19px;
+    margin-bottom: 15px;
+    overflow: hidden;
+    font-size: 12px;
+}
+.l_b_btn_mes span:nth-of-type(1){
+	float: left;
+	color: #399efa;
+}
+.l_b_btn_mes span:nth-of-type(2){
+	float: right;
+	color: #399efa;
+}
+.l_b_login_type{
+	    height: 40px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+.l_b_login_type div{
+	float: left;
+}
+.l_b_login_type div img{
+	    height: 40px;
+    width: 40px;
+}
+.l_b_login_type div:nth-of-type(1){
+	width: 25%;
+	text-align: center;
+}
+.l_b_login_type div:nth-of-type(2){
+	width: 25%;
+	text-align: center;
+}
+.l_b_login_type div:nth-of-type(3){
+	width: 25%;
+	text-align: center;
+}
+.l_b_login_type div:nth-of-type(4){
+	width: 25%;
+	text-align: center;
+}
+.l_tt{
+	font-size: 12px;
+	text-align: center;
+	color: #7a7a7a;
+}

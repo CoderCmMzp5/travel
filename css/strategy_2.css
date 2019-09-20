@@ -1,0 +1,55 @@
+
+    .gl_w{
+        border:1px solid rgba(229,229,229,1);
+        padding:30px;
+        width:1200px;
+        margin:0 auto;
+        overflow: hidden;
+        margin-bottom: 30px;
+        min-height: 600px;
+    }
+    .gl_w h1{
+        color:#222;
+        font-size:24px;
+        margin-bottom:34px;
+    }
+    .gl_w >div{
+        width:49.9%;
+        float:left;
+        height:130px;
+        position:relative;
+    }
+    .gl_w >div img{
+        width:200px;
+        height:130px;
+        float:left;
+    }
+    .gl_w >div>div{
+        margin-left:220px;
+    }
+    .gl_w >div div h1{
+         color:#222;
+        font-size:20px;
+        margin-bottom:4px;
+    }
+    .gl_w >div div div:nth-of-type(1){
+        color:#999;
+        font-size:14px;
+        margin-bottom:45px;
+    }
+    .gl_w >div div div:nth-of-type(2){
+        width:90px;
+        height:32px;
+        line-height:32px;
+        border:1px solid rgba(189,189,189,1);
+        color:#666;
+        text-align:center;
+        border-radius:5px;
+    }
+    .cp{
+        width:24px!important;
+        height:24px!important;
+        position:absolute;
+        right:100px;
+        top:0px;
+    }

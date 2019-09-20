@@ -1,0 +1,72 @@
+.travelsInner{
+    width: 1200px;
+    margin:0 auto;
+}
+.travelsContentDiv{
+    position: relative;
+    box-shadow:0px 0px 24px 0px rgba(16,53,87,0.05);
+    padding-left: 360px;
+    padding-top:20px;
+    padding-bottom: 20px;
+    padding-right: 50px;
+} 
+.travelsInner h1{
+    color: #000000;
+    font-size: 56px;
+    margin-bottom: 60px;
+}
+.travelsContent{
+    background: #fff;
+    height: 236px;
+    
+    margin-bottom: 30px;
+
+}
+.lImg{
+    width: 340px;
+    height:236px;
+    float: left;
+}
+.travelsContentDiv h1{
+    font-size: 20px;
+    color: #000;
+    margin-bottom: 5px;
+}
+.travelsContentDiv h3{
+    color:#888888;
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+.travelsContentDiv h5{
+    color:#000000;
+    font-size: 12px;
+    margin-bottom: 10px;
+}
+.money{
+    color:#F66663;
+    font-size: 22px;
+    margin-bottom: 30px;
+}
+.details{
+    color: #888888;
+    font-size: 12px;
+}
+.addr{
+    position: absolute;
+    right: 10px;
+    top:10px;
+    vertical-align: middle
+}
+.addr img{
+    width: 10px;
+    margin-right: 10px;
+    vertical-align: middle
+}
+.addr span{
+    font-size: 12px;
+    color: #888;
+    vertical-align: middle
+}
+.page{
+    margin-bottom: 35px;
+}

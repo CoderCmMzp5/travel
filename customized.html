@@ -14,6 +14,14 @@
 <title>注册</title>
 <link rel="stylesheet" href="./css/style.css" type="text/css" media="screen" charset="utf-8">
 <link rel="stylesheet" href="./css/customized.css" type="text/css" media="screen" charset="utf-8">
+<link rel="stylesheet" type="text/css" href="layui/css/layui.css">
+<script type="text/javascript" src="layui/layui.js"></script>
+<style type="text/css">
+    .layui-laydate .layui-this {
+        background: rgba(57,158,250,1)!important;
+    color: #fff!important;
+}
+</style>
 </head>
 <body>
 <div class="header" id="nav">
@@ -42,7 +50,7 @@
             <div class="c_t_inner_wrap">
                 <div>
                     <h2>出发城市<span>*</span></h2>
-                    <input type="type" placeholder="选择出发城市">
+                    <input type="type" placeholder="选择出发城市" class="cityB">
                 </div>
                 <div>
                     <h2>目的地<span>*</span></h2>
@@ -52,11 +60,11 @@
             <div class="c_t_inner_wrap">
                 <div>
                     <h2>预计出游时间<span>*</span></h2>
-                    <input type="type" placeholder="选择出发时间">
+                     <input type="text" class="layui-input" id="test5" placeholder="选择出发时间">
                 </div>
                 <div>
                     <h2>预计归来时间<span>*</span></h2>
-                    <input type="type" placeholder="选择归来时间">
+                    <input type="text" class="layui-input" id="test6" placeholder="选择归来时间">
                 </div>
             </div>
             <h1>机票信息</h1>
@@ -70,6 +78,50 @@
                     <input type="type" placeholder="输入您的航班号">
                 </div>
             </div>
+            <div class="cityArea" ref="cityArea">
+                        <div>
+                            <h1>湖南</h1>
+                            <div>
+                                <span>长沙</span><span>湘潭</span><span>株洲</span>
+                                <span>岳阳</span><span>衡阳</span><span>韩国</span>
+                                <span>长沙</span><span>湘潭</span><span>株洲</span>
+                                <span>岳阳</span><span>衡阳</span><span>韩国</span>
+                                <span>长沙</span><span>湘潭</span><span>株洲</span>
+                                <span>岳阳</span><span>衡阳</span><span>韩国</span>
+                            </div>
+                        </div>
+                        <div>
+                            <h1>广东</h1>
+                            <div>
+                                <span>广州</span><span>湘潭</span><span>株洲</span>
+                                <span>岳阳</span><span>衡阳</span><span>韩国</span>
+                                <span>长沙</span><span>湘潭</span><span>株洲</span>
+                                <span>岳阳</span><span>衡阳</span><span>韩国</span>
+                                <span>长沙</span><span>湘潭</span><span>株洲</span>
+                                <span>岳阳</span><span>衡阳</span><span>韩国</span>
+                            </div>
+                        </div>
+                        <div>
+                            <h1>四川</h1>
+                            <div>
+                                <span>长沙</span><span>湘潭</span><span>株洲</span>
+                                <span>岳阳</span><span>衡阳</span><span>韩国</span>
+                                <span>长沙</span><span>湘潭</span><span>株洲</span>
+                                <span>岳阳</span><span>衡阳</span><span>韩国</span>
+                            </div>
+                        </div>
+                        <div>
+                            <h1>山西</h1>
+                            <div>
+                                <span>长沙</span><span>湘潭</span><span>株洲</span>
+                                <span>岳阳</span><span>衡阳</span><span>韩国</span>
+                                <span>长沙</span><span>湘潭</span><span>株洲</span>
+                                <span>岳阳</span><span>衡阳</span><span>韩国</span>
+                                <span>长沙</span><span>湘潭</span><span>株洲</span>
+                                <span>岳阳</span><span>衡阳</span><span>韩国</span>
+                            </div>
+                        </div>
+                    </div>
         </div>
     </div>
 
@@ -934,6 +986,7 @@
     </div>
 </div>
 </body>
+<script type="text/javascript" src="js/jquery.min.js"></script>
 <script type="text/javascript">
     initPoint();
     function initPoint(){
@@ -985,5 +1038,30 @@
     document.getElementById("nav").onclick=function(){
         window.location.href="strategy_detail_3.html" 
     }
+
+    $(".cityB").on("focus",function(){
+        $(".cityArea").show();
+    })
+    $(".cityB").on("blur",function(){
+        $(".cityArea").hide();
+    })
 </script>
+<script>
+layui.use('laydate', function(){
+  var laydate = layui.laydate;
+  
+  //日期时间选择器
+  laydate.render({
+    elem: '#test5'
+    ,type: 'datetime'
+  });
+  //日期时间选择器
+  laydate.render({
+    elem: '#test6'
+    ,type: 'datetime'
+  });
+  
+});
+</script>
+
 </html>

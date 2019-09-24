@@ -13,6 +13,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <title>目的地</title>
 <link rel="stylesheet" href="./css/style.css" type="text/css" media="screen" charset="utf-8">
+<link rel="stylesheet" href="./css/addressDetail.css" type="text/css" media="screen" charset="utf-8">
 </head>
 <body>
 <div class="header">
@@ -39,7 +40,7 @@
     	<div class="d_b_l">
         	<h2>I wanna go to</h2>
             <div class="in">
-            	<input type="text" value="我想去...." class="text" />
+            	<input type="text" value="" placeholder="我想去...." class="text" />
                 <input type="button" value="" class="btn" />
             </div>
             <div class="city">
@@ -48,6 +49,15 @@
                 <span>南京</span>
                 <span>台湾</span>
             </div>
+        </div>
+        <div class="d_b_l d_b_l_r">
+            <h1>趁年轻，多出去走走</h1>
+            <div>年轻真好，有激情有精力</div>
+            <div>你可以在960万平方公里的土地上</div>
+            <div>探寻名山大川，名胜古迹 感悟岁月的独特韵致和魅力</div>
+            <div>你还可以迈出国门踏上旅程 领略多姿多彩的异域风情</div>
+            <div>瞄爪，用心为你定制每一次 不被琐事困扰的深度旅行</div>
+            <div>只为你，提升视野广度，增加人生厚度</div>
         </div>
        <!--  <div class="d_b_r">
         	<h2>趁年轻，多出去走走</h2>
@@ -260,22 +270,27 @@
     	<h1>热门目的地</h1>
         <div class="hot_list clearfix">
         	<div class="hot_l">
-            	<div class="hot1">
+            	<div class="hot1 hArea">
                 	<div class="t"><span>塞班</span></div>
+                    <div class="fadeM"></div>
                 </div>
-                <div class="hot2">
+                <div class="hot2 hArea">
                 	<div class="t"><span>旧金山</span></div>
+                    <div class="fadeM"></div>
                 </div>
             </div>
-            <div class="hot_c">
+            <div class="hot_c hArea">
             	<div class="t"><span>塔克拉玛干</span></div>
+                <div class="fadeM"></div>
             </div>
             <div class="hot_r">
-            	<div class="hot1">
+            	<div class="hot1 hArea">
                 	<div class="t"><span>玉龙</span></div>
+                    <div class="fadeM"></div>
                 </div>
-                <div class="hot2">
+                <div class="hot2 hArea">
                 	<div class="t"><span>曼谷</span></div>
+                    <div class="fadeM"></div>
                 </div>
             </div>
         </div>
@@ -285,8 +300,155 @@
 	<div class="layout">
     	<h1>目的地排行榜</h1>
     	<div class="phb_selected">
-        	<span>选择国家</span>
+        	<span class="cityV">选择国家</span>
         </div>
+        <div class="cityArea" ref="cityArea">
+        <div>
+            <h1>亚洲</h1>
+            <div>
+                <span>中国</span>
+                <span>日本</span>
+                <span>韩国</span>
+                <span>菲律宾</span>
+                <span>马来西亚</span>
+                <span>韩国</span>
+                <span>中国</span>
+                <span>日本</span>
+                <span>韩国</span>
+                <span>菲律宾</span>
+                <span>马来西亚</span>
+                <span>韩国</span><span>中国</span>
+                <span>日本</span>
+                <span>韩国</span>
+                <span>菲律宾</span>
+                <span>马来西亚</span>
+                <span>韩国</span>
+                <span>马来西亚</span>
+                <span>韩国</span><span>中国</span>
+                <span>日本</span>
+                <span>韩国</span>
+                <span>菲律宾</span>
+                <span>马来西亚</span>
+                <span>韩国</span>
+            </div>
+        </div>
+        <div>
+            <h1>欧洲</h1>
+            <div>
+                <span>中国</span>
+                <span>日本</span>
+                <span>韩国</span>
+                <span>菲律宾</span>
+                <span>马来西亚</span>
+                <span>韩国</span>
+                <span>中国</span>
+                <span>日本</span>
+                <span>韩国</span>
+                <span>菲律宾</span>
+                <span>马来西亚</span>
+                <span>韩国</span><span>中国</span>
+                <span>日本</span>
+                <span>韩国</span>
+                <span>菲律宾</span>
+                <span>马来西亚</span>
+                <span>韩国</span>
+                <span>马来西亚</span>
+                <span>韩国</span><span>中国</span>
+                <span>日本</span>
+                <span>韩国</span>
+                <span>菲律宾</span>
+                <span>马来西亚</span>
+                <span>韩国</span>
+            </div>
+        </div>
+        <div>
+            <h1>北美洲</h1>
+            <div>
+                <span>中国</span>
+                <span>日本</span>
+                <span>韩国</span>
+                <span>菲律宾</span>
+                <span>马来西亚</span>
+                <span>韩国</span>
+                <span>中国</span>
+                <span>日本</span>
+                <span>韩国</span>
+                <span>菲律宾</span>
+                <span>马来西亚</span>
+                <span>韩国</span><span>中国</span>
+                <span>日本</span>
+                <span>韩国</span>
+                <span>菲律宾</span>
+                <span>马来西亚</span>
+                <span>韩国</span>
+                <span>马来西亚</span>
+                <span>韩国</span><span>中国</span>
+                <span>日本</span>
+                <span>韩国</span>
+                <span>菲律宾</span>
+                <span>马来西亚</span>
+                <span>韩国</span>
+            </div>
+        </div>
+        <div>
+            <h1>大洋洲</h1>
+            <div>
+                <span>中国</span>
+                <span>日本</span>
+                <span>韩国</span>
+                <span>菲律宾</span>
+                <span>马来西亚</span>
+                <span>韩国</span>
+                <span>中国</span>
+                <span>日本</span>
+                <span>韩国</span>
+                <span>菲律宾</span>
+                <span>马来西亚</span>
+                <span>韩国</span><span>中国</span>
+                <span>日本</span>
+                <span>韩国</span>
+                <span>菲律宾</span>
+                <span>马来西亚</span>
+                <span>韩国</span>
+                <span>马来西亚</span>
+                <span>韩国</span><span>中国</span>
+                <span>日本</span>
+                <span>韩国</span>
+                <span>菲律宾</span>
+                <span>马来西亚</span>
+                <span>韩国</span>
+            </div>
+        </div>
+        <div>
+            <h1>非洲</h1>
+            <div>
+                <span>中国</span>
+                <span>日本</span>
+                <span>韩国</span>
+                <span>菲律宾</span>
+                <span>马来西亚</span>
+                <span>韩国</span>
+                <span>中国</span>
+                <span>日本</span>
+                <span>韩国</span>
+                <span>菲律宾</span>
+                <span>马来西亚</span>
+                <span>韩国</span><span>中国</span>
+                <span>日本</span>
+                <span>韩国</span>
+                <span>菲律宾</span>
+                <span>马来西亚</span>
+                <span>韩国</span>
+                <span>马来西亚</span>
+                <span>韩国</span><span>中国</span>
+                <span>日本</span>
+                <span>韩国</span>
+                <span>菲律宾</span>
+                <span>马来西亚</span>
+                <span>韩国</span>
+            </div>
+        </div>
+    </div>
         <div class="phb_list clearfix">
         	<div class="p_list">
             	<img src="./images/price.png" />
@@ -296,6 +458,7 @@
                     <li><span>No3</span>阿尔山自治区<em>AERSHAN</em> </li>
                     <li><span>No4</span>上海<em>SHANGHAI</em> </li>
                     <li><span>No5</span>南京<em>NANJIN</em> </li>
+                    <li class="hiddenLi"><span>No6</span>北京<em>NANJIN</em> </li>
                 </ul>
                 <div class="more"><a href="javascript:;">查看更多&nbsp;&nbsp;&gt;</a></div>
             </div>
@@ -307,6 +470,7 @@
                     <li><span>No3</span>阿尔山自治区<em>AERSHAN</em> </li>
                     <li><span>No4</span>上海<em>SHANGHAI</em> </li>
                     <li><span>No5</span>南京<em>NANJIN</em> </li>
+                    <li class="hiddenLi"><span>No6</span>北京<em>NANJIN</em> </li>
                 </ul>
                 <div class="more"><a href="javascript:;">查看更多&nbsp;&nbsp;&gt;</a></div>
             </div>
@@ -318,6 +482,7 @@
                     <li><span>No3</span>阿尔山自治区<em>AERSHAN</em> </li>
                     <li><span>No4</span>上海<em>SHANGHAI</em> </li>
                     <li><span>No5</span>南京<em>NANJIN</em> </li>
+                    <li class="hiddenLi"><span>No6</span>北京<em>NANJIN</em> </li>
                 </ul>
                 <div class="more"><a href="javascript:;">查看更多&nbsp;&nbsp;&gt;</a></div>
             </div>
@@ -367,5 +532,19 @@
     document.getElementById("nav").onclick=function(){
         window.location.href="addressDetail.html" 
     }
+</script>
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript">
+    $(".more").on("click",function(){
+        $(this).parent().find(".hiddenLi").show();
+    });
+    $(".phb_selected").on("click",function(){
+        $(".cityArea").show();
+    })
+    $(".cityArea").on("click",function(e){
+        var inner=e.target.innerHTML;
+        $(this).hide();
+        $(".cityV").html(inner)
+    })
 </script>
 </html>

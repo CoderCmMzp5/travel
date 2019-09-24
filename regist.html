@@ -31,7 +31,7 @@
 	<a href="javascript:;"><img src="./images/banner_3.png" /></a>
     <div class="mask"></div>
     <div class="dia_b">
-        <h1>快速注册账号<img src="images/diaClose.png" class="close"></h1>
+        <h1>快速注册账号<img src="images/diaClose.png" class="close" id="close"></h1>
         <div class="line"></div>
         <div class="formD " id="phoneEy"><span>手机号码</span><input placeholder="请输入您的手机号"><img src="images/inputMes.png" class="ipT"><span class="errorC">请正确填写手机号码</span></div>
         <div class="formD " id="emailEy"><span>邮箱</span><input placeholder="请输入您的邮箱号码"><img src="images/inputMes.png" class="ipT"><span class="errorC">请输入您的邮箱号码</span></div>
@@ -145,6 +145,9 @@
     };
     document.getElementById("nav").onclick=function(){
         window.location.href="destination.html" 
+    }
+    document.getElementById("close").onclick=function(){
+        window.location.href="login.html" 
     }
 </script>
 </html>

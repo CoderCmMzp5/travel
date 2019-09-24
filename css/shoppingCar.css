@@ -48,6 +48,16 @@
     vertical-align: middle;
     cursor: pointer;
 }
+.selectAll{
+	width: 16px;
+    background: url(../images/co.png) no-repeat center center;
+    height: 16px;
+    background-size: cover;
+    display: inline-block;
+    vertical-align: middle;
+    cursor: pointer;
+    display: inline-block;
+}
 .shoppingAreaInnerContent{
 	background: #fff;
 	font-size: 14px;
@@ -154,7 +164,7 @@ padding-bottom: 24px
 	border-radius: 5px;
 	border: 1px solid #eee;
 	background: #fff;
-	top:70px;
+	top:0px;
 }
 .shoppingType div{
 	line-height: 40px;

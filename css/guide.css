@@ -77,3 +77,62 @@
     font-size: 14px;
     margin-top: 9px;
 }
+
+.banner_title{
+    width: 550px;
+    position: absolute;
+    top:110px;
+    left:50%;
+    margin-left:-450px;
+
+}
+.banner_title h1{
+    font-size: 38px;
+    margin-bottom: 30px;
+    color: #fff
+}
+.banner_title div{
+    font-size: 22px;
+    color: #fff
+}
+.g_1{margin-bottom:10px;}
+.g_2{margin-bottom: 25px;}
+
+
+
+.guideTitle div:nth-of-type(1) span:nth-of-type(1){
+    width: 28px;
+    height: 28px;
+    margin-right: 5px;
+    vertical-align: middle;
+    background: url(../images/guide_2.png) center center no-repeat;
+    background-size: cover;
+    display: inline-block
+}
+.guideTitle div:nth-of-type(1).selected span:nth-of-type(1){
+    width: 28px;
+    height: 28px;
+    margin-right: 5px;
+    vertical-align: middle;
+    background: url(../images/guide_1.png) center center no-repeat;
+    background-size: cover;
+    display: inline-block
+}
+.guideTitle div:nth-of-type(2) span:nth-of-type(1){
+    width: 28px;
+    height: 28px;
+    margin-right: 5px;
+    vertical-align: middle;
+    background: url(../images/guide_3.png) center center no-repeat;
+    background-size: cover;
+    display: inline-block
+}
+.guideTitle div:nth-of-type(2).selected span:nth-of-type(1){
+    width: 28px;
+    height: 28px;
+    margin-right: 5px;
+    vertical-align: middle;
+    background: url(../images/guide_4.png) center center no-repeat;
+    background-size: cover;
+    display: inline-block
+}

@@ -30,20 +30,36 @@
                 <a href="about.html">关于我们</a>
             </div>
             <div class="header_right">
-                <span>查看行程&nbsp;&nbsp;<img src="./images/mark.png" /></span>
+                <span class="state">查看行程&nbsp;&nbsp;<img src="./images/mark.png" /></span>
                 <a href="javascript:;"><img src="./images/message.png" />&nbsp;消息(1234)</a>&nbsp;&nbsp;&nbsp;
                 <a href="javascript:;"><img src="./images/cart.png" />&nbsp;&nbsp;购物车</a>&nbsp;&nbsp;&nbsp;
                 <span><a href="usercenter.html"><img src="./images/photo.png"
                             class="photo" />&nbsp;&nbsp;昵称昵称</a></span>
+                <div class="xCdIv">
+                    <div>某某某某地<span>至</span>某某某某地....</div>
+                    <div>某某某某地<span>至</span>某某某某地....</div>
+                    <div>某某某某地<span>至</span>某某某某地....</div>
+                    <div>某某某某地<span>至</span>某某某某地....</div>
+                </div>
             </div>
         </div>
     </div>
     <div class="banner">
         <a href="javascript:;"><img src="./images/banner_5.png" /></a>
+        <div class="banner_title">
+            <h1>有一个TA,等着带你去征服地球</h1>
+            <div class="g_1">热爱名俗文化的TA</div>
+            <div class="g_2">对风俗，风情，节庆，如数家珍</div>
+            <div class="g_1">尝尽舌尖美味的TA</div>
+            <div class="g_2">脑中存满一张张美酒，美食地图</div>
+            <div class="g_1">寻求心灵契合的TA</div>
+            <div class="g_2">经历过无数次净化身心的灵修之旅</div>
+            <div>在喵爪，总有一个TA等着带你去征服地球</div>
+        </div>
     </div>
     <div class="guideTitle">
-        <div class="selected"><img src="images/guide_1.png" alt=""><span>导游</span></div>
-        <div><img src="images/guide_3.png" alt=""><span>顾问</span></div>
+        <div class="selected"><span></span><span>导游</span></div>
+        <div ><span></span><span>顾问</span></div>
     </div>
     <div class="guideContent">
         <div class="guideContentHeader">
@@ -232,9 +248,22 @@
     <div class="cart"><a href="javascript:;"></a></div>
 </div> -->
 </body>
+<script type="text/javascript" src="js/jquery.min.js"></script>
 <script type="text/javascript">
     document.getElementById("nav").onclick=function(){
         window.location.href="shoppingCar.html" 
     }
+    $(".guideTitle div").on("click",function(){
+        $(".guideTitle div").each(function(){
+            $(this)[0].className="";
+        })
+        $(this)[0].className="selected";
+    })
+
+    $(".state").hover(function(){
+        $(".xCdIv").show();
+    },function(){
+        $(".xCdIv").hide();
+    })
 </script>
 </html>

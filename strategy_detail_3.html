@@ -14,6 +14,8 @@
 <title>注册</title>
 <link rel="stylesheet" href="./css/style.css" type="text/css" media="screen" charset="utf-8">
 <link rel="stylesheet" href="./css/strategy_detail_3.css" type="text/css" media="screen" charset="utf-8">
+<link rel="stylesheet" type="text/css" href="layui/css/layui.css">
+<script type="text/javascript" src="layui/layui.js"></script>
 </head>
 <body>
 <div class="header" id="nav">
@@ -30,7 +32,8 @@
 <div class="banner_bg">
     <div class="banner_bg_i">
         <h1>某某某某某某行程标题</h1>
-        <div><input type="text" value="请选择具体日期" name=""><img src="images/ll.png"><input type="" name="" value="第几天"><img src="images/rr.png"></div>
+        <div><input type="text" class="layui-input" id="test5" placeholder="请选择具体日期" style="display: inline-block;">
+        <img src="images/ll.png"><input type="" name="" value="第几天"><img src="images/rr.png"></div>
     </div>
 </div>
 <div class="banner_bg_i2">
@@ -153,5 +156,17 @@
      document.getElementById("nav").onclick=function(){
         window.location.href="message.html" 
     }
+</script>
+<script>
+layui.use('laydate', function(){
+  var laydate = layui.laydate;
+  
+  //日期时间选择器
+  laydate.render({
+    elem: '#test5'
+    ,type: 'datetime'
+  });
+  
+});
 </script>
 </html>

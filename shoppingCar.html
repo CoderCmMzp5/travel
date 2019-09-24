@@ -24,11 +24,12 @@
         </div>
     </div>
 </div>
+
 <div class="shoppingArea">
     <div class="shoppingAreaInner">
         <div class="shoppingAreaInnerHead">
             <div class="fnArr">
-                <div class="cb"></div><span>全选</span><span>信息</span>
+                <div class="selectAll"></div><span>全选</span><span>信息</span>
             </div>
             <div class="address">地点</div>
             <div class="addTime">添加时间</div>
@@ -278,5 +279,28 @@
     document.getElementById("nav").onclick=function(){
         window.location.href="strategy_detail_2.html" 
     }
+</script>
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript">
+    $(".selectAll").on("click",function(){
+        if($(this).hasClass("cbActive")){
+            $(this)[0].className="selectAll";
+            $(".cb").each(function(){
+                $(this)[0].className="cb"
+            })
+        }else{
+            $(this)[0].className="selectAll cbActive"
+            $(".cb").each(function(){
+                $(this)[0].className="cb cbActive"
+            })
+        }
+    })
+
+    $(".shoppingType div").on("click",function(){
+        $(".shoppingType div").each(function(){
+            $(this)[0].className=""
+        })
+        $(this)[0].className="selectd"
+    })
 </script>
 </html>

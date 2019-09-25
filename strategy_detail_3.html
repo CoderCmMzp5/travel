@@ -33,7 +33,7 @@
     <div class="banner_bg_i">
         <h1>某某某某某某行程标题</h1>
         <div><input type="text" class="layui-input" id="test5" placeholder="请选择具体日期" style="display: inline-block;">
-        <img src="images/ll.png"><input type="" name="" value="第几天"><img src="images/rr.png"></div>
+        <img src="images/ll.png"><input type="" name="" value="" placeholder="第几天"><img src="images/rr.png"></div>
     </div>
 </div>
 <div class="banner_bg_i2">
@@ -157,6 +157,7 @@
         window.location.href="message.html" 
     }
 </script>
+<script type="text/javascript" src="js/jquery.min.js"></script>
 <script>
 layui.use('laydate', function(){
   var laydate = layui.laydate;
@@ -168,5 +169,9 @@ layui.use('laydate', function(){
   });
   
 });
+
+$(".banner_bg_i2").on("click",function(){
+    window.location.href="strategy_detail.html" 
+})
 </script>
 </html>

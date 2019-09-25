@@ -557,3 +557,22 @@
 .cityArea>div>h1{color:#222;font-size:18px;margin-bottom:0px;text-align: left!important}
 .cityArea>div>div{overflow:hidden;margin-top:10px;margin-bottom:10px;}
 .cityArea>div>div>span{float:left;display:inline-block;margin-right:20px;color:#888;font-size:14px;margin-bottom: 15px;cursor: pointer}
+
+.cityArea_2{    background: #fff;
+    padding-top: 10px;
+    display: block;
+    background: #fff;
+    position: absolute;
+    top: 263px;
+    right: 91px;
+    height: 300px;
+    overflow: auto;
+    width: 443px;
+    box-shadow:0px 2px 24px 0px rgba(4,33,48,0.04);
+    z-index: 999999999999999;
+    display: none;
+}
+.cityArea_2>div{padding:26px;padding-bottom: 0;padding-top: 0px;padding-left: 0;padding-top: 10px;padding-left: 20px;z-index: 999999999999}
+.cityArea_2>div>h1{color:#222;font-size:18px;margin-bottom:0px;text-align: left!important}
+.cityArea_2>div>div{overflow:hidden;margin-top:10px;margin-bottom:10px;}
+.cityArea_2>div>div>span{float:left;display:inline-block;margin-right:20px;color:#888;font-size:14px;margin-bottom: 15px;cursor: pointer}

@@ -54,9 +54,17 @@
             </div>
             <div class="addressD"><img src="images/address.png"><span>某地-某地</span></div>
             <div class="addTimeD"><span>2019-05-08 18:00</span></div>
-            <div class="editD"><span>删除</span><span>移动</span></div>
+            <div class="editD"><span>删除</span><span class="move">移动</span></div>
             <div style="clear: both;"></div>
             <div class="lines"></div>
+
+            <div class="fnBox">
+                <div>选项一</div>
+                <div class="actives">选项二</div>
+                <div>选项三</div>
+                <div>选项四</div>
+                <div>选项五</div>
+            </div>
         </div>
         <div class="shoppingAreaInnerContent">
             <div class="fnArrD">
@@ -301,6 +309,13 @@
             $(this)[0].className=""
         })
         $(this)[0].className="selectd"
+    });
+
+    $(".move").on("click",function(){
+        $(this).parent().parent().find(".fnBox").show();
+    })
+    $(".fnBox div").on("click",function(){
+        $(this).parent().hide();
     })
 </script>
 </html>

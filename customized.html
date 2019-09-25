@@ -54,7 +54,7 @@
                 </div>
                 <div>
                     <h2>目的地<span>*</span></h2>
-                    <input type="type" placeholder="选择您想去的城市">
+                    <input type="type" placeholder="选择您想去的城市"  class="cityC">
                 </div>
             </div>
             <div class="c_t_inner_wrap">
@@ -71,7 +71,7 @@
             <div class="c_t_inner_wrap">
                 <div>
                     <h2>出发时间<span>*</span></h2>
-                    <input type="type" placeholder="输入您的出发时间">
+                    <input type="text" class="layui-input" id="test7" placeholder="输入您的出发时间">
                 </div>
                 <div>
                     <h2>航班号<span>*</span></h2>
@@ -79,49 +79,93 @@
                 </div>
             </div>
             <div class="cityArea" ref="cityArea">
-                        <div>
-                            <h1>湖南</h1>
-                            <div>
-                                <span>长沙</span><span>湘潭</span><span>株洲</span>
-                                <span>岳阳</span><span>衡阳</span><span>韩国</span>
-                                <span>长沙</span><span>湘潭</span><span>株洲</span>
-                                <span>岳阳</span><span>衡阳</span><span>韩国</span>
-                                <span>长沙</span><span>湘潭</span><span>株洲</span>
-                                <span>岳阳</span><span>衡阳</span><span>韩国</span>
-                            </div>
-                        </div>
-                        <div>
-                            <h1>广东</h1>
-                            <div>
-                                <span>广州</span><span>湘潭</span><span>株洲</span>
-                                <span>岳阳</span><span>衡阳</span><span>韩国</span>
-                                <span>长沙</span><span>湘潭</span><span>株洲</span>
-                                <span>岳阳</span><span>衡阳</span><span>韩国</span>
-                                <span>长沙</span><span>湘潭</span><span>株洲</span>
-                                <span>岳阳</span><span>衡阳</span><span>韩国</span>
-                            </div>
-                        </div>
-                        <div>
-                            <h1>四川</h1>
-                            <div>
-                                <span>长沙</span><span>湘潭</span><span>株洲</span>
-                                <span>岳阳</span><span>衡阳</span><span>韩国</span>
-                                <span>长沙</span><span>湘潭</span><span>株洲</span>
-                                <span>岳阳</span><span>衡阳</span><span>韩国</span>
-                            </div>
-                        </div>
-                        <div>
-                            <h1>山西</h1>
-                            <div>
-                                <span>长沙</span><span>湘潭</span><span>株洲</span>
-                                <span>岳阳</span><span>衡阳</span><span>韩国</span>
-                                <span>长沙</span><span>湘潭</span><span>株洲</span>
-                                <span>岳阳</span><span>衡阳</span><span>韩国</span>
-                                <span>长沙</span><span>湘潭</span><span>株洲</span>
-                                <span>岳阳</span><span>衡阳</span><span>韩国</span>
-                            </div>
-                        </div>
+                <div>
+                    <h1>湖南</h1>
+                    <div>
+                        <span>长沙</span><span>湘潭</span><span>株洲</span>
+                        <span>岳阳</span><span>衡阳</span><span>韩国</span>
+                        <span>长沙</span><span>湘潭</span><span>株洲</span>
+                        <span>岳阳</span><span>衡阳</span><span>韩国</span>
+                        <span>长沙</span><span>湘潭</span><span>株洲</span>
+                        <span>岳阳</span><span>衡阳</span><span>韩国</span>
                     </div>
+                </div>
+                <div>
+                    <h1>广东</h1>
+                    <div>
+                        <span>广州</span><span>湘潭</span><span>株洲</span>
+                        <span>岳阳</span><span>衡阳</span><span>韩国</span>
+                        <span>长沙</span><span>湘潭</span><span>株洲</span>
+                        <span>岳阳</span><span>衡阳</span><span>韩国</span>
+                        <span>长沙</span><span>湘潭</span><span>株洲</span>
+                        <span>岳阳</span><span>衡阳</span><span>韩国</span>
+                    </div>
+                </div>
+                <div>
+                    <h1>四川</h1>
+                    <div>
+                        <span>长沙</span><span>湘潭</span><span>株洲</span>
+                        <span>岳阳</span><span>衡阳</span><span>韩国</span>
+                        <span>长沙</span><span>湘潭</span><span>株洲</span>
+                        <span>岳阳</span><span>衡阳</span><span>韩国</span>
+                    </div>
+                </div>
+                <div>
+                    <h1>山西</h1>
+                    <div>
+                        <span>长沙</span><span>湘潭</span><span>株洲</span>
+                        <span>岳阳</span><span>衡阳</span><span>韩国</span>
+                        <span>长沙</span><span>湘潭</span><span>株洲</span>
+                        <span>岳阳</span><span>衡阳</span><span>韩国</span>
+                        <span>长沙</span><span>湘潭</span><span>株洲</span>
+                        <span>岳阳</span><span>衡阳</span><span>韩国</span>
+                    </div>
+                </div>
+            </div>
+            <div class="cityArea_2" ref="cityArea">
+                <div>
+                    <h1>湖南</h1>
+                    <div>
+                        <span>长沙</span><span>湘潭</span><span>株洲</span>
+                        <span>岳阳</span><span>衡阳</span><span>韩国</span>
+                        <span>长沙</span><span>湘潭</span><span>株洲</span>
+                        <span>岳阳</span><span>衡阳</span><span>韩国</span>
+                        <span>长沙</span><span>湘潭</span><span>株洲</span>
+                        <span>岳阳</span><span>衡阳</span><span>韩国</span>
+                    </div>
+                </div>
+                <div>
+                    <h1>广东</h1>
+                    <div>
+                        <span>广州</span><span>湘潭</span><span>株洲</span>
+                        <span>岳阳</span><span>衡阳</span><span>韩国</span>
+                        <span>长沙</span><span>湘潭</span><span>株洲</span>
+                        <span>岳阳</span><span>衡阳</span><span>韩国</span>
+                        <span>长沙</span><span>湘潭</span><span>株洲</span>
+                        <span>岳阳</span><span>衡阳</span><span>韩国</span>
+                    </div>
+                </div>
+                <div>
+                    <h1>四川</h1>
+                    <div>
+                        <span>长沙</span><span>湘潭</span><span>株洲</span>
+                        <span>岳阳</span><span>衡阳</span><span>韩国</span>
+                        <span>长沙</span><span>湘潭</span><span>株洲</span>
+                        <span>岳阳</span><span>衡阳</span><span>韩国</span>
+                    </div>
+                </div>
+                <div>
+                    <h1>山西</h1>
+                    <div>
+                        <span>长沙</span><span>湘潭</span><span>株洲</span>
+                        <span>岳阳</span><span>衡阳</span><span>韩国</span>
+                        <span>长沙</span><span>湘潭</span><span>株洲</span>
+                        <span>岳阳</span><span>衡阳</span><span>韩国</span>
+                        <span>长沙</span><span>湘潭</span><span>株洲</span>
+                        <span>岳阳</span><span>衡阳</span><span>韩国</span>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 
@@ -1045,6 +1089,12 @@
     $(".cityB").on("blur",function(){
         $(".cityArea").hide();
     })
+    $(".cityC").on("focus",function(){
+        $(".cityArea_2").show();
+    })
+    $(".cityC").on("blur",function(){
+        $(".cityArea_2").hide();
+    })
 </script>
 <script>
 layui.use('laydate', function(){
@@ -1058,6 +1108,11 @@ layui.use('laydate', function(){
   //日期时间选择器
   laydate.render({
     elem: '#test6'
+    ,type: 'datetime'
+  });
+  //日期时间选择器
+  laydate.render({
+    elem: '#test7'
     ,type: 'datetime'
   });
   

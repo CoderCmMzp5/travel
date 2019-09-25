@@ -247,7 +247,7 @@ img{border:0}
 
 
 .dest_banner{width:100%;height:660px; background:url(../images/banner_4.png) no-repeat center center; padding-top:180px;    background-size: cover; }
-.dest_banner .d_b_l{width:520px;background:rgba(0,0,0,0.32);border-radius:12px;float:left;padding:19px 24px; margin-top:100px;}
+.dest_banner .d_b_l{width:520px;background:rgba(0,0,0,0.32);border-radius:12px;float:left;padding:19px 24px; margin-top:100px;position: relative;}
 .dest_banner .d_b_l h2{font-size:28px;font-family:PingFang-SC;font-weight:500;color:rgba(255,255,255,1);}
 .dest_banner .d_b_l .city{font-size:20px;font-family:PingFang-SC;color:rgba(255,255,255,1);}
 .dest_banner .d_b_l .city span{margin-right:24px;}
@@ -544,4 +544,46 @@ span.flatpickr-weekday{
     background: rgba(57,158,250,1);
     outline: none;
     padding: 0;
+}
+.jFont{       position: absolute;
+    left: 50%;
+    top: 0;
+    font-size: 90px!important;
+    z-index: -1;
+    color: rgba(35,97,130,0.04)!important;}
+.jFont_1{
+        margin-left: -126px!important;
+    top: -34px;
+}
+.jFont_2{
+           margin-left: -183px!important;
+    top: -47px;
+}
+.jFont_3{
+           margin-left:-257px!important;
+    top: -47px;
+}
+.jFont_4{
+           margin-left:-199px!important;
+    top: -47px;
+}
+.dzImg{
+    background:url(../images/get.png) no-repeat center center;
+    background-size: 100% 100%;
+    cursor: pointer;
+}
+.c_top .dzImg {
+    width: 18px;
+    height: 18px;
+    margin-right: 4px;
+    display: inline-block;
+}
+.dzImg:hover{
+    background:url(../images/dz_2.png) no-repeat center center;
+    background-size: 100% 100%;
+    
+}
+.dzImgActive{
+    background:url(../images/dz_2.png) no-repeat center center;
+    background-size: 100% 100%;
 }

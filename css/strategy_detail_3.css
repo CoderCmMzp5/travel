@@ -334,6 +334,7 @@
     height: 600px;
     background: url(../images/amCharts.pixelMap@2x.png) no-repeat center center;
     background-size: cover;
+    cursor: pointer;
 }
 .banner_bg_i2 img{
         width: 1034px;

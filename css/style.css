@@ -80,7 +80,7 @@ img{border:0}
 
 .banner{width:100%;position: relative;}
 .banner img{width:100%;}
-
+.state{line-height: 80px;display: inline-block;}
 .main01{width:100%;padding:100px 0;}
 .step01{margin-top:60px;}
 .step01 .step01_l{width:580px;}

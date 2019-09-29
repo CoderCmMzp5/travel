@@ -30,17 +30,19 @@
             </div>
             <div class="header_right">
             
-                <span class="state">查看行程&nbsp;&nbsp;<img src="images/mark.png" /></span>
+                <span class="state"><span>查看行程&nbsp;&nbsp;</span><img src="images/mark.png" />
+                    <div class="xCdIv">
+                        <div>某某某某地<span>至</span>某某某某地....</div>
+                        <div>某某某某地<span>至</span>某某某某地....</div>
+                        <div>某某某某地<span>至</span>某某某某地....</div>
+                        <div>某某某某地<span>至</span>某某某某地....</div>
+                    </div>
+                </span>
                 <a href="javascript:;"><img src="images/message.png" />&nbsp;消息(1234)</a>&nbsp;&nbsp;&nbsp;
 <a href="javascript:;"><img src="images/cart.png" />&nbsp;&nbsp;购物车</a>&nbsp;&nbsp;&nbsp;
 <span><a href="usercenter.html"><img src="images/photo.png" class="photo" />&nbsp;&nbsp;昵称昵称</a></span>
                
-                <div class="xCdIv">
-                    <div>某某某某地<span>至</span>某某某某地....</div>
-                    <div>某某某某地<span>至</span>某某某某地....</div>
-                    <div>某某某某地<span>至</span>某某某某地....</div>
-                    <div>某某某某地<span>至</span>某某某某地....</div>
-                </div>
+                
             </div>
         </div>
     </div>
@@ -68,6 +70,8 @@
                     </div>
                 </div>
             </div>
+            <div class="swiper-button-next"></div>
+             <div class="swiper-button-prev"></div>
             <div class="swiper-pagination"></div>
         </div>
         
@@ -275,6 +279,10 @@
         loop: true,//无缝轮播
         pagination: {//小圆点分页
             el: '.swiper-pagination',
+        },
+        navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
         }
     })
     $(".state").hover(function(){

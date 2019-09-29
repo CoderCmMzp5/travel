@@ -17,10 +17,7 @@
 <link rel="stylesheet" type="text/css" href="layui/css/layui.css">
 <script type="text/javascript" src="layui/layui.js"></script>
 <style type="text/css">
-    .layui-laydate .layui-this {
-        background: rgba(57,158,250,1)!important;
-    color: #fff!important;
-}
+
 </style>
 </head>
 <body>
@@ -487,58 +484,80 @@
     <div class="c_t_i_message">
         <div class="c_t_i_message_1">
             <h1>基础信息</h1>
-            <div>
-                <h2>时间：2018-08-08</h2>
-                <h2>地点：阿拉贾母山</h2>
-                <div><div>第</div><div>一</div><div>天</div></div>
+            <div class="draggable-element">
+                <div class="drag_1 ">
+                    <h2>时间：2018-08-08</h2>
+                    <h2>地点：阿拉贾母山1</h2>
+                    <div class="dDs"><div>第</div><div>一</div><div>天</div></div>
+                    <p class="drag_1_1"></p>
+                </div>
+                <p>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </p>
             </div>
-            <p>
-                <span></span>
-                <span></span>
-                <span></span>
-                <span></span>
-                <span></span>
-            </p>
-            <div>
-                <h2>时间：2018-08-08</h2>
-                <h2>地点：阿拉贾母山</h2>
-                <div><div>第</div><div>二</div><div>天</div></div>
+            <div class="draggable-element">
+                <div class="drag_2 ">
+                    <h2>时间：2018-08-08</h2>
+                    <h2>地点：阿拉贾母山2</h2>
+                    <div class="dDs"><div>第</div><div>二</div><div>天</div></div>
+                    <p class="drag_1_2"></p>
+                </div>
+                <p>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </p>
             </div>
-            <p>
-                <span></span>
-                <span></span>
-                <span></span>
-                <span></span>
-                <span></span>
-            </p>
-            <div>
-                <h2>时间：2018-08-08</h2>
-                <h2>地点：阿拉贾母山</h2>
-                <div><div>第</div><div>三</div><div>天</div></div>
+            <div  class="draggable-element">
+                <div class="drag_3">
+                    <h2>时间：2018-09-08</h2>
+                    <h2>地点：阿拉贾母山3</h2>
+                    <div class="dDs"><div>第</div><div>三</div><div>天</div></div>
+                    <p class="drag_1_3"></p>
+                </div>
+                <p>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </p>
             </div>
-            <p>
-                <span></span>
-                <span></span>
-                <span></span>
-                <span></span>
-                <span></span>
-            </p>
-            <div>
-                <h2>时间：2018-08-08</h2>
-                <h2>地点：阿拉贾母山</h2>
-                <div><div>第</div><div>四</div><div>天</div></div>
+            <div  class="draggable-element">
+                <div class="drag_4">
+                    <h2>时间：2018-10-08</h2>
+                    <h2>地点：阿拉贾母山4</h2>
+                    <div class="dDs"><div>第</div><div>四</div><div>天</div></div>
+                    <p class="drag_1_4"></p>
+                </div>
+                <p>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </p>
             </div>
-            <p>
-                <span></span>
-                <span></span>
-                <span></span>
-                <span></span>
-                <span></span>
-            </p>
-            <div>
-                <h2>时间：2018-08-08</h2>
-                <h2>地点：阿拉贾母山</h2>
-                <div><div>第</div><div>五</div><div>天</div></div>
+            <div class="draggable-element">
+                <div class="drag_5">
+                    <h2>时间：2018-08-08</h2>
+                    <h2>地点：阿拉贾母山5</h2>
+                    <div class="dDs"><div>第</div><div>五</div><div>天</div></div>
+                    <p class="drag_1_5"></p>
+                </div>
+                <p>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </p>
             </div>
         </div>
         <div class="c_t_i_message_2">
@@ -1027,6 +1046,7 @@
             <div class="in"><input type="text" value="" class="text" /></div>
             <div class="in"><input type="text" value="" class="text" /></div>
         </div>
+        <div class="hInner" style="display: none;"></div>
     </div>
 </div>
 </body>
@@ -1118,5 +1138,11 @@ layui.use('laydate', function(){
   
 });
 </script>
+<script type="text/javascript" src="js/drag-arrange.js"></script>
+<script type="text/javascript">
+      $(function() {
+          $('.draggable-element').arrangeable();
+      });
+    </script>
 
 </html>

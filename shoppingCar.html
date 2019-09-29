@@ -311,11 +311,15 @@
         $(this)[0].className="selectd"
     });
 
-    $(".move").on("click",function(){
+    $(".move").on("click",function(e){
+        e.stopPropagation();
         $(this).parent().parent().find(".fnBox").show();
     })
     $(".fnBox div").on("click",function(){
         $(this).parent().hide();
+    })
+    $("body").on("click",function(){
+        $(".fnBox").hide();
     })
 </script>
 </html>

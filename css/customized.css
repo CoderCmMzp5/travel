@@ -307,11 +307,11 @@
     right:10px;
     top:24px;
  }
- .c_t_i_message_2 >p{
+ .c_t_i_message_2>div>p{
     padding-left: 19px;
     color:#979797;
 }
-.c_t_i_message_2 >p>span{
+.c_t_i_message_2 >div >p>span{
     display: block;
     width: 2px;
     height: 2px;
@@ -590,5 +590,8 @@
 }
 html,body{-moz-user-select: none; -khtml-user-select: none; user-select: none;}
 .draggable-element:last-child>p{
+    display: none;
+}
+.draggable-element:last-child>.fnD{
     display: none;
 }

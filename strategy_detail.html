@@ -238,7 +238,7 @@
         window.location.href="strategy.html" 
     }
     document.getElementById("goto_top").onclick=function(){
-       window.scroll(0,0)
+       $('body,html').animate({ scrollTop: 0 }, 500);
     }
 
 </script>
